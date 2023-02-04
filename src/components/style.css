@@ -1,0 +1,54 @@
+:root {
+  --flightTable-text-color: #fff;
+  --flightTable-text-colored: rgb(249, 233, 6);
+  --flightTable-background-caption: rgb(6, 76, 122);
+  --flightTable-background-light: rgb(22, 137, 214);
+  --flightTable-background-dark: rgb(3, 102, 168);
+  --flightTable-border-color: rgb(1, 58, 95);
+}
+
+.flightTable {
+  flex: 1;
+  border-collapse: collapse;
+  border: 1px solid var(--flightTable-border-color);
+  margin: 10px;
+  color: var(--flightTable-text-color);
+}
+
+.flightTable th,
+.flightTable td,
+.flightTable caption {
+  padding: 6px;
+  border: 1px solid var(--flightTable-border-color);
+}
+
+.flightTable .centered {
+  text-align: center;
+}
+
+.flightTable tr:nth-child(odd) {
+  background-color: var(--flightTable-background-dark);
+}
+
+.flightTable th,
+.flightTable caption {
+  background-color: var(--flightTable-background-caption);
+}
+
+.flightTable th {
+  cursor: pointer;
+}
+
+.flightTable tr:nth-child(even) {
+  background-color: var(--flightTable-background-light);
+}
+
+.flightTable caption {
+  color: var(--flightTable-text-colored);
+  text-transform: uppercase;
+  font-size: large;
+}
+
+.flightTable .colored {
+  color: var(--flightTable-text-colored);
+}
